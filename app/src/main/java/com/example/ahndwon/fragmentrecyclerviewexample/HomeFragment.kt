@@ -23,7 +23,12 @@ class HomeFragment : Fragment() {
             BasicFragment.newInstance("SECOND", Dummies.imageList),
             BasicFragment.newInstance("THIRD", Dummies.imageList),
             BasicFragment.newInstance("FOURTH", Dummies.imageList),
-            BasicFragment.newInstance("FIFTH", Dummies.imageList)
+            BasicFragment.newInstance("FIFTH", Dummies.imageList),
+            BasicFragment.newInstance("SIXTH", Dummies.imageList),
+            BasicFragment.newInstance("SEVENTH", Dummies.imageList),
+            BasicFragment.newInstance("EIGHTH", Dummies.imageList),
+            BasicFragment.newInstance("NINTH", Dummies.imageList),
+            BasicFragment.newInstance("TENTH", Dummies.imageList)
         )
 
         view.homeRecyclerView.adapter = adapter
