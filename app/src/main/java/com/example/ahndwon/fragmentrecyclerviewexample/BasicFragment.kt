@@ -2,18 +2,14 @@ package com.example.ahndwon.fragmentrecyclerviewexample
 
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.ahndwon.fragmentrecyclerviewexample.ItemListAdapter.Companion.VIEW_BASIC
 import kotlinx.android.synthetic.main.fragment_basic.view.*
 
-
 class BasicFragment : Fragment() {
-    private var title: String? = null
-    private var image: ArrayList<String>? = null
 
     companion object {
         const val FRAGMENT_TITLE = "fragment_title"
@@ -41,7 +37,7 @@ class BasicFragment : Fragment() {
 
         view.fragmentTitle.text = title
 
-        val adapter = ItemListAdapter(VIEW_BASIC)
+        val adapter = ItemListAdapter()
         adapter.items = image
         view.recyclerView.apply {
             this.adapter = adapter

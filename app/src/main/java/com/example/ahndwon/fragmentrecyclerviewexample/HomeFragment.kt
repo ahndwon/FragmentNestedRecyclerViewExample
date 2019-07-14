@@ -2,7 +2,6 @@ package com.example.ahndwon.fragmentrecyclerviewexample
 
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -19,26 +18,12 @@ class HomeFragment : Fragment() {
 
         val adapter = FragmentListAdapter(childFragmentManager)
 
-        val images = arrayListOf(
-                "http://www.koreadaily.com/_data/article_img/2012/11/01/205001638.jpg",
-                "https://encrypted-tbn0.gstatic.com/images?" +
-                        "q=tbn:ANd9GcTm_FFgaK1uOeGKex6usvDwauT38u2PzdzqVQpWKkEs6foPIFepSw",
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm_" +
-                        "FFgaK1uOeGKex6usvDwauT38u2PzdzqVQpWKkEs6foPIFepSw",
-                "http://img.cgv.co.kr/Movie/Thumbnail/StillCu" +
-                        "t/000076/76655/76655101760_727.jpg" ,
-                "http://www.koreadaily.com/_data/article_img/2012/11/01/205001638.jpg"
-
-                )
-
-
         adapter.fragments = listOf(
-            TopFragment.newInstance("Top", images),
-            BasicFragment.newInstance("FIRST", images),
-            BasicFragment.newInstance("SECOND", images),
-            BasicFragment.newInstance("THIRD", images),
-            BasicFragment.newInstance("FOURTH", images),
-            BasicFragment.newInstance("FIFTH", images)
+            BasicFragment.newInstance("FIRST", Dummies.imageList),
+            BasicFragment.newInstance("SECOND", Dummies.imageList),
+            BasicFragment.newInstance("THIRD", Dummies.imageList),
+            BasicFragment.newInstance("FOURTH", Dummies.imageList),
+            BasicFragment.newInstance("FIFTH", Dummies.imageList)
         )
 
         view.homeRecyclerView.adapter = adapter

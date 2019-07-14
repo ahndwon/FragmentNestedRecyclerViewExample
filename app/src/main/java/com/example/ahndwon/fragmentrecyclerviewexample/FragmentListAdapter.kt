@@ -1,6 +1,5 @@
 package com.example.ahndwon.fragmentrecyclerviewexample
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
