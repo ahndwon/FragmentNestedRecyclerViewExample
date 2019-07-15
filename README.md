@@ -43,7 +43,7 @@ This example can be used to make an UI such as above. It is a widely used UI.
 
 ## Example footage
 **Recycler views**  
-![](https://drive.google.com/file/d/1ScKpU05XUKJwflMxWJqZLahGjEQriao7/view)
+![](./images/recycler_view.gif)
 
 **Bottom navigation,action bar auto hidden**   
-![](https://drive.google.com/open?id=15VdJRltPc_VyxV6zczNtgyXzvuvF4kFs/view)
+![](./images/bottom_nav_action_bar.gif)
