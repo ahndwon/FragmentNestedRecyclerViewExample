@@ -6,6 +6,8 @@ Because the vertical recycler view’s items are fragments, the code is more ind
 
 Also, the bottom navigation and the app bar is hidden when scrolled down to offer more screen real estate to the user.
 
+    
+      
 ## How Implemented
 Fragments are passed to the FragmentListAdapter.
 ```kotlin
@@ -36,6 +38,8 @@ class FragmentListAdapter () ... {
 The root view’s id is changed for the transaction. Because all fragments in the example is using the same layout xml. View’s id has to be unique to be replaced by fragmentManager.   
   
 
+  
+    
 
 ## Example usage
 ![how this example can be used](https://i.stack.imgur.com/FoXkc.png)  
