@@ -15,11 +15,11 @@ class BasicFragment : Fragment() {
         const val FRAGMENT_TITLE = "fragment_title"
         const val FRAGMENT_IMAGE = "fragment_image"
 
-        fun newInstance(title: String, image: ArrayList<String>) : BasicFragment {
+        fun newInstance(title: String, images: ArrayList<String>) : BasicFragment {
             return BasicFragment().apply {
                 val bundle = Bundle()
                 bundle.putString(FRAGMENT_TITLE, title)
-                bundle.putStringArrayList(FRAGMENT_IMAGE, image)
+                bundle.putStringArrayList(FRAGMENT_IMAGE, images)
                 arguments = bundle
             }
         }
@@ -33,12 +33,12 @@ class BasicFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_basic, container, false)
 
         val title = arguments?.getString(FRAGMENT_TITLE)
-        val image= arguments?.getStringArrayList(FRAGMENT_IMAGE) ?: ArrayList<String>()
+        val images= arguments?.getStringArrayList(FRAGMENT_IMAGE) ?: ArrayList<String>()
 
         view.fragmentTitle.text = title
 
         val adapter = ItemListAdapter()
-        adapter.items = image
+        adapter.items = images
         view.recyclerView.apply {
             this.adapter = adapter
             this.layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.HORIZONTAL, false)
