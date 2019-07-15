@@ -42,8 +42,9 @@ The root view’s id is changed for the transaction. Because all fragments in th
 This example can be used to make an UI such as above. It is a widely used UI.
 
 ## Example footage
-**Recycler views**  
+### Recycler views
 <img src="./images/recycler_view.gif" height="696">
-
-**Bottom navigation,action bar auto hidden**  
+      
+        
+### Bottom navigation,action bar auto hidden 
 <img src="./images/bottom_nav_action_bar.gif" height="696">
