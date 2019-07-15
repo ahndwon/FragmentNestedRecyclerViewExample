@@ -43,7 +43,7 @@ This example can be used to make an UI such as above. It is a widely used UI.
 
 ## Example footage
 **Recycler views**  
-![](./images/recycler_view.gif)
+<img src="./images/recycler_view.gif" height="696">
 
-**Bottom navigation,action bar auto hidden**   
-![](./images/bottom_nav_action_bar.gif)
+**Bottom navigation,action bar auto hidden**  
+<img src="./images/bottom_nav_action_bar.gif" height="696">
