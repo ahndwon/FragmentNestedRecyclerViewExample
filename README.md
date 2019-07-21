@@ -1,4 +1,4 @@
-# FragmentRecyclerView
+# FragmentNestedRecyclerView
 Basic example of a **vertical** recycler view which consists of items that are fragments. 
 Each fragment has a **horizontal** recycler view to show  items.
 
