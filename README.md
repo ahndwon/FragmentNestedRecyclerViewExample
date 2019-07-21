@@ -50,5 +50,5 @@ This example can be used to make an UI such as above. It is a widely used UI.
 <img src="./images/recycler_view.gif" height="696">
       
         
-### Bottom navigation,action bar auto hidden 
+### Bottom navigation,action bar hidden by scroll
 <img src="./images/bottom_nav_action_bar.gif" height="696">
