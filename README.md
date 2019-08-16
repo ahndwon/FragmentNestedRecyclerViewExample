@@ -15,16 +15,21 @@ class FragmentListAdapter () ... {
 	//...
 
 	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FragmentViewHolder {
-    		val view = LayoutInflater.from(parent.context).inflate(R.layout.item_fragment, parent, false)
+	        val view = LayoutInflater.from(parent.context)
+                .inflate(R.layout.item_fragment, parent, false)
 		// view id is changed because each view's id has to be unique in order to be replaced by the fragmentManager.
-	    	view.rootView.id = viewType
-    		return FragmentViewHolder(view)
-	}
-	
-	override fun getItemViewType(position: Int): Int {
-	    	return position + 1
-	}
+	        view.rootView.id = viewType
+        	return FragmentViewHolder(view)
+    	}
 
+	    override fun getItemViewType(position: Int): Int {
+        	return position + 1
+    	}
+
+	    override fun getItemCount(): Int {
+        	return fragments.size
+    	}
+    
 	override fun onBindViewHolder(holder: FragmentViewHolder, position: Int) {
     		fragmentManager.beginTransaction()
             		.replace(holder.itemView.id, fragments[position])
