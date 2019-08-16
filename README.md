@@ -22,11 +22,11 @@ class FragmentListAdapter () ... {
         	return FragmentViewHolder(view)
     	}
 
-	    override fun getItemViewType(position: Int): Int {
+	override fun getItemViewType(position: Int): Int {
         	return position + 1
     	}
 
-	    override fun getItemCount(): Int {
+	override fun getItemCount(): Int {
         	return fragments.size
     	}
     
